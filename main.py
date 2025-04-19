@@ -8,7 +8,7 @@ import settings
 class CustomBrowser(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("ShockBrowser")
+        self.setWindowTitle("Home Browser")
         self.setGeometry(100, 100, 1200, 800)
 
         self.browser = QWebEngineView()

@@ -8,6 +8,10 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="settings-icon" onclick="openSettings()">
+        ⚙️
+    </div>
+
   <div class="container">
     <div class="main">
       <h1 class="logo">Home Browser</h1>
@@ -15,6 +19,14 @@
         <input type="text" id="search-box" placeholder="Search the web..." autocomplete="off">
         <button type="submit">Search</button>
       </form>
+    </div>
+
+    <div class="widget-container">
+      <!-- Weather Widget -->
+      <div class="weather-widget">
+        <h3>🌤 Weather in Your Area</h3>
+        <p id="weather-info">Weather data is currently unavailable</p>
+      </div>
     </div>
 
     <div class="about">
@@ -25,5 +37,6 @@
 
     <p class="footer">© 2025 Home Browser | Open-source & yours 💙</p>
   </div>
+
 </body>
 </html>
