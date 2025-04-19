@@ -4,7 +4,7 @@ An intuitive and lightweight web browser built with Python and PyQt5.
 
 --------------------
 🔹 About the Project 🔹
-Home Browser is a minimalist web browser designed for simplicity and efficiency. It offers a clean UI inspired by iOS aesthetics while ensuring smooth navigation.
+Home Browser is a minimalist web browser designed for simplicity and efficiency.
 
 --------------------
 ⚡ Features ⚡
