@@ -16,11 +16,11 @@ Home Browser is a minimalist web browser designed for simplicity and efficiency.
 --------------------
 🚀 Installation 🚀
 1. Clone the repository:
-   git clone https://github.com/YOUR_USERNAME/Home-Browser.git
+   git clone https://github.com/rShuffler/Home-Browser.git
 2. Navigate to the project folder:
    cd Home-Browser
 3. Install dependencies:
-   pip install -r requirements.txt
+   pip install pyqt5
 4. Run the application:
    python main.py
 
@@ -38,8 +38,8 @@ Home Browser is a minimalist web browser designed for simplicity and efficiency.
 
 --------------------
 👤 Author 👤
-Developed with passion by [YOUR_USERNAME]  
-GitHub: https://github.com/YOUR_USERNAME  
+Developed with passion by [rShuffler]  
+GitHub: https://github.com/rShuffler 
 
 --------------------
 📜 License 📜
