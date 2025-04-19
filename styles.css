@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #4fc3f7;
+    --bg-color: #1e1e2f;
+    --text-color: #fff;
+    --secondary-text: #bbb;
+    --hover-color: #03a9f4;
+    --transition-speed: 0.3s;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    animation: fadeIn 1s ease;
+  }
+  
+  .logo {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    transition: transform var(--transition-speed);
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 50px;
+    animation: slideUp 1s ease forwards;
+  }
+  
+  #search-box {
+    padding: 14px 22px;
+    width: 420px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: box-shadow var(--transition-speed);
+  }
+  
+  #search-box:focus {
+    box-shadow: 0 0 10px var(--primary-color);
+  }
+  
+  button {
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: #000;
+    cursor: pointer;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+  }
+  
+  .about {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 20px 30px;
+    width: 600px;
+    margin: 0 auto 20px;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 2s ease;
+  }
+  
+  .about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 16px;
+    color: var(--secondary-text);
+    margin-bottom: 5px;
+  }
+  
+  .footer {
+    font-size: 14px;
+    color: var(--secondary-text);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
