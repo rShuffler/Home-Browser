@@ -1,6 +1,6 @@
 # Home-Browser 🚀
 
-An intuitive and lightweight web browser built with Python and PyQt5.
+An intuitive and lightweight web browser built with JS.
 
 --------------------
 🔹 About the Project 🔹
@@ -20,15 +20,13 @@ Home Browser is a minimalist web browser designed for simplicity and efficiency.
 2. Navigate to the project folder:
    cd Home-Browser
 3. Install dependencies:
-   pip install pyqt5
+   npm install
 4. Run the application:
-   python main.py
+   npm start
 
 --------------------
 🛠 Technologies Used 🛠
-- Python → Core functionality
-- PyQt5 → UI design
-- Additional APIs → (if applicable)
+......................
 
 --------------------
 📌 Future Improvements 📌
