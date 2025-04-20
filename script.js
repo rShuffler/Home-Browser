@@ -2,8 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("search-form");
     const input = document.getElementById("search-box");
     const weatherInfo = document.getElementById("weather-info");
-    const settingsButton = document.querySelector(".settings-icon"); // Добавляем обработчик для кнопки настроек
+    const settingsButton = document.querySelector(".settings-icon");
 
+    // Поиск
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         const query = input.value.trim();
@@ -12,27 +13,27 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Обработчик клика по шестеренке
+    // Открытие настроек
     settingsButton.addEventListener("click", () => {
         console.log("Открываю настройки...");
         window.location.href = "settings.html";
     });
+    
 
-    // Fetch Weather Data
+    // Погода
     async function fetchWeather() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(async (position) => {
                 let lat = position.coords.latitude;
                 let lon = position.coords.longitude;
 
-                const apiKey = 'cdde843f642f9019bb5d3fb524a173b2'; // API-ключ OpenWeatherMap
+                const apiKey = 'cdde843f642f9019bb5d3fb524a173b2';
                 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
                 try {
                     const response = await fetch(url);
                     const data = await response.json();
 
-                    // Создаем красивый вывод погоды
                     const city = data.name;
                     const temp = Math.round(data.main.temp);
                     const description = data.weather[0].description;

@@ -1,3 +1,10 @@
+const path = require('path');
+
+const BASE_DIR = __dirname;
+const START_PAGE = path.join(BASE_DIR, 'index.html');
+
+console.log(START_PAGE);
+
 function saveSettings() {
     const theme = document.getElementById("theme-select").value;
     const searchEngine = document.getElementById("search-engine").value;
